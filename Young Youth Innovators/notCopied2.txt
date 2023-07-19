@@ -1,0 +1,14 @@
+public static boolean isAscending(double[] a)
+   {
+      boolean inOrder = true;
+      int lesser = 0;
+      for(int i = 1; i < a.length; i++)
+      {
+         if(a[i]<a[lesser])
+         {
+            inOrder = false;
+         }
+         lesser++;
+      }
+      return inOrder;
+   }
